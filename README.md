@@ -10,9 +10,9 @@ Note that the workflow uses a simple `git push` (i.e. it does NOT force push) to
 This means that if commits were force-pushed to the upstream repository branch which would overwrite existing commits in the mirror, the sync job for this repo will fail and the mirror will need to be synced manually.
 This is on purpose, and we recommend not force-pushing to the main branch of your repository.
 
-If you'd like to have your repository mirrored on the [Earlham Institute GitHub organisation](https://github.com/TGAC),
+If you'd like to have your repository mirrored on the [Earlham Institute GitHub organisation](https://github.com/EarlhamInst),
 please:
 1. Fork this repository.
 2. Modify the `.github/workflows/sync.yaml` file by adding a new job configuration to the matrix of the `repo-sync` job
-as in [these lines](https://github.com/TGAC/reposyncer/blob/main/.github/workflows/sync.yaml#L14-L16).
+as in [these lines](https://github.com/EarlhamInst/reposyncer/blob/main/.github/workflows/sync.yaml#L14-L16).
 3. Open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
