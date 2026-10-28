@@ -11,6 +11,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - upstream_repo_owner: yuxuanlan
+            upstream_repo_name: Barcode_library_pipeline
+            upstream_repo_branch: main
           - upstream_repo_owner: jameswilsenach
             upstream_repo_name: FlowFI
             upstream_repo_branch: main
